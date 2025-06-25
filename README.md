@@ -1,6 +1,7 @@
 # sql-python-cohort-retention
 
-El presente trabajo tiene como objetivo realizar análisis de retención y reincidencia de cohortes y estudios
+El presente proyecto fue realizado en el contexto de la matería "Modelos Relacionales" de la Maestría en Ciencia de Datos de la Universidad de Buenos Aires.
+Este trabajo tiene como objetivo realizar análisis de retención y reincidencia de cohortes y estudios
 de tendencias por periodos temporales. Este trabajo es realizado en la base de datos
 AdventureWorks2019, a tales efectos se utiliza Python en conjunto con la librería PYODBC para realizar
 consultas SQL y obtener los datos que servirán como base para la creación de gráficos con la asistencia
