@@ -1,4 +1,4 @@
-# sql-python-cohort-retention
+# Análisis de retención y reincidencia de clientes y productos a partir de cohortes y tendencias temporales en SQL
 
 El presente proyecto fue realizado en el contexto de la matería "Modelos Relacionales" de la Maestría en Ciencia de Datos de la Universidad de Buenos Aires.
 Este trabajo tiene como objetivo realizar análisis de retención y reincidencia de cohortes y estudios
