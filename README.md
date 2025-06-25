@@ -14,4 +14,7 @@ El análisis comienza por un análisis de tendencias temporales de las ganancias
 (Figura 1). Se observa un salto significativo en el año 2013 alcanzando un monto de 48 millones de
 dolares. Esto nos sirvió para pensar una pregunta de si había alguna causalidad en dicho incremento o
 era producto del azar.
-![Retención clientes cohorte 2011](img/1_Ganancias_a_lo_largo_de_los_años.png)
+<p align="center">
+  <img src="img/1_Ganancias_a_lo_largo_de_los_años.png" alt="Ganancias" width="600"/>
+</p>
+
