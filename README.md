@@ -6,11 +6,13 @@ de tendencias por periodos temporales. Este trabajo es realizado en la base de d
 AdventureWorks2019, a tales efectos se utiliza Python en conjunto con la librería PYODBC para realizar
 consultas SQL y obtener los datos que servirán como base para la creación de gráficos con la asistencia
 de PANDAS, SEABORN y MATPLOTLIB.
+
 El análisis se centra en dos dimensiones principales: clientes y productos. Ambas dimensiones
 analizadas en relación a las ventas. De esta manera el esquema Sales será el más utilizado con sus
 tablas Sales.SalesOrderHeader y Sales.SalesOrderDetail. Sin embargo excepcionalmente cuando el
 análisis lo requiera se pueden incluir otro tipo de tablas del esquema Production para enfocarnos en sí
 determinada tendencia responde a la naturaleza del producto ofrecido.
+
 El análisis comienza por un análisis de tendencias temporales de las ganancias obtenidas por la empresa
 (Figura 1). Se observa un salto significativo en el año 2013 alcanzando un monto de 48 millones de
 dolares. Esto nos sirvió para pensar una pregunta de si había alguna causalidad en dicho incremento o
@@ -29,7 +31,9 @@ un factor determinante del aumento en las ganancias registradas en el año 2013.
 </p>
 
 De esta manera surge el interrogante si será un factor determinante el comportamiento de los clientes o
-es atribuible a los productos ofrecidos el aumento en las ganancias del año 2013. Es por ello que se
+es atribuible a los productos ofrecidos el aumento en las ganancias del año 2013. 
+
+Es por ello que se
 precede en primer lugar a verificar si ese impacto en las ganancias también es observable en los
 clientes lo cual conforme surge de la imagen (Figura 3) se ratifica una tendencia significativa de
 aumento en la clientela del año 2013.
@@ -44,6 +48,7 @@ grupo de clientes del año 2013. En particular, buscamos determinar si este incr
 captación de nuevos clientes —posiblemente impulsada por un cambio en el catálogo de productos— o
 si también incluye el regreso de clientes previos, lo cual implicaría cierta fidelidad o reactivación del
 vínculo con la compañía.
+
 En los datos (Figura 4) se revela que muchos de los clientes que habían estado activos en 2011 dejaron
 de realizar compras en 2012, pero volvieron a hacerlo en 2013. Este comportamiento sugiere que el
 aumento observado podría estar motivado por cambios en la oferta de productos o en la estrategia
@@ -58,7 +63,9 @@ las cohortes.
 Con motivo de este indicio se procedió al análisis de cohortes con una granularidad más fina. Buscando
 traducir a porcentajes, las cantidades de clientes que se conservaban de las cohortes originales. Ya no
 centrándonos sólo en el año 2011 sino en los clientes que tuvieron contacto por primera vez en la
-compañía en los sucesivos años. De esta manera conforme podemos observar en el gráfico de líneas
+compañía en los sucesivos años. 
+
+De esta manera conforme podemos observar en el gráfico de líneas
 (Figura 5), tanto para las cohortes del año 2011 como 2012 se puede observar una retención que en
 ambos gira en valores en el rango de entre el 50 y 55 por ciento para el año 2013. Resulta llamativo el
 hecho de que el año 2013 refleja un retorno significativo de los clientes del año 2011.
@@ -73,6 +80,7 @@ Se ajusta nuevamente la granularidad para realizar un análisis trimestral. Se p
 que para el primer trimestre del 2013 comienza la tendencia de crecimiento con un retorno de los
 clientes de los productos ofrecidos en los trimestres anteriores al segundo trimestre de 2013. Se
 configura de esta manera una curva con inflexión hacia arriba también llamada “curva” sonrisa.
+
 Asimismo, se observa un punto de quiebre reflejado en el cambio del comportamiento de los cohortes
 de retención en el segundo trimestre de 2013 (trimestre 10). Por un lado, en este trimestre la caída de la
 retención en el mes subsiguiente al que los productos fueron comprados (hecho que está presente en
@@ -128,7 +136,9 @@ Finalmente se procede a hacer un análisis con granularidad más fina y se corro
 comportamiento alrededor del año 2013 haciendo un análisis de múltiples cohortes trimestrales de
 productos (FIGURA 10) demostrando que para todas las cohortes pertenecientes a los diferentes
 trimestres del año 2011 y 2012 el punto de inflexión se genera en el tercer trimestre del año 2013, es
-decir desde el trimestre número 11. Se visualizan pérdidas de retención de aproximadamente el 40% de
+decir desde el trimestre número 11. 
+
+Se visualizan pérdidas de retención de aproximadamente el 40% de
 productos para dichas cohortes en contraposición a las cohortes pertenecientes a todos los trimestres
 posteriores al segundo trimestre del 2013 pues en ellos la alta retención indica un presunto cambio en el
 comportamiento de los clientes que parecieran preferir el consumo de los productos solicitados en este
@@ -150,7 +160,9 @@ facilita la lectura de valores que presenta la figura 11.
 Así teniendo en consideración lo visualizado, en el gráfico (Figura 12) no resulta casual que los 5
 productos más vendidos los 5 hayan comenzado a venderse en mayo de 2013 y que de manera
 congruente con el análisis realizado hasta este punto estos productos superen ampliamente a los
-productos vendidos en el 2011 y 2022. Estos productos son: “Water Bottle - 30 oz” (categoría Bottles
+productos vendidos en el 2011 y 2022.
+
+Estos productos son: “Water Bottle - 30 oz” (categoría Bottles
 and Cages), “AWC Logo Cap” (categoría “Caps”), “Sport-100 Helmet, Black” (categoría Helmets),
 “Sport-100 Helmet, Blue” (categoría Helmets) y “Sport-100 Helmet, Red” (categoría Helmets).
 
@@ -160,8 +172,7 @@ and Cages), “AWC Logo Cap” (categoría “Caps”), “Sport-100 Helmet, Bla
 
 
 De forma congruente, este aumento en las ventas se reflejó también en un aumento en la ganancia
-(FIGURA 13)
- alcanzando un punto de inflexión con la salida a la venta de los 5 productos más
+(FIGURA 13) alcanzando un punto de inflexión con la salida a la venta de los 5 productos más
 vendidos.
 
 
